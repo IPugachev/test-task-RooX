@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: #f3f3f3;
+  border-radius: 8px;
+  padding: 10px;
+  &__inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 400;
+    color: rgb(163, 163, 163);
+    gap: 7px;
+  }
+
+  p {
+    display: inline-flex;
+    gap: 7px;
+  }
+  span {
+    color: black;
+  }
+
+  &__details {
+    align-self: flex-end;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(75, 81, 239, 1);
+  }
+}

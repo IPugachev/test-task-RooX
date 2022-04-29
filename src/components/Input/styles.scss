@@ -1,0 +1,23 @@
+.user__input {
+  label {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    line-height: 13px;
+    gap: 3px;
+  }
+  input {
+    width: 211px;
+    border: 1px solid rgba(216, 216, 216, 1);
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 5px 10px;
+  }
+}
+
+.user__input.error {
+  input {
+    border-color: rgba(217, 19, 19, 1);
+  }
+}

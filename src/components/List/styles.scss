@@ -1,0 +1,21 @@
+.list {
+  &__container {
+    width: 100%;
+    padding: 20px 55px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  &__title {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 3px;
+  }
+  &__users-amount {
+    text-align: right;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
