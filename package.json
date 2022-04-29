@@ -2,7 +2,7 @@
   "name": "react-webpack",
   "version": "1.0.0",
   "description": "test task RooX",
-  "homepage": "https://ipugachev.github.io/test-task-RooX/",
+  "homepage": ".",
   "main": "src/index.tsx",
   "scripts": {
     "predeploy": "npm run build",
