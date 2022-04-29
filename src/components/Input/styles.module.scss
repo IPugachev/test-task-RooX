@@ -14,10 +14,9 @@
     line-height: 14px;
     padding: 5px 10px;
   }
-}
-
-.user__input.error {
-  input {
-    border-color: rgba(217, 19, 19, 1);
+  &.error {
+    input {
+      border-color: rgba(217, 19, 19, 1);
+    }
   }
 }

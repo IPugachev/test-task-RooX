@@ -1,5 +1,5 @@
-import { ValidationRuleType, ValidationRulesEnum } from '../../interfaces/ValidationInterfaces'
-import { UserInterface } from '../../interfaces/UserInterface'
+import { ValidationRuleType, ValidationRulesEnum } from '../../interfaces/validationInterfaces'
+import { UserInterface } from '../../interfaces/userInterface'
 
 interface InputFieldsInterface {
   name: string

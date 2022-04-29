@@ -2,10 +2,10 @@ import { FormProvider, useForm } from 'react-hook-form'
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 
-import { userAPI } from '../../store/services/UserService'
+import { userAPI } from '../../store/services/userService'
 import { getInputFields } from './data'
 import { Input } from '../../components/Input'
-import './styles.scss'
+import styles from './styles.module.scss'
 
 interface IFormInputs {
   [key: string]: string
@@ -28,15 +28,18 @@ export const User = () => {
       {isError && <p className='api-message'>Ошибка загрузки</p>}
       {user && (
         <FormProvider {...methods}>
-          <form className='user' onSubmit={methods.handleSubmit(onSubmit)}>
-            <div className='user__title-container'>
-              <h2 className='user__title'>Профиль пользователя</h2>
-              <button type='button' className='user__update-btn' onClick={() => handleReadOnly((prev) => !prev)}>
+          <form className={styles.user} onSubmit={methods.handleSubmit(onSubmit)}>
+            <div className={styles['user__title-container']}>
+              <h2 className={styles.user__title}>Профиль пользователя</h2>
+              <button
+                type='button'
+                className={styles['user__update-btn']}
+                onClick={() => handleReadOnly((prev) => !prev)}>
                 Редактировать
               </button>
             </div>
 
-            <div className='user__inner-wrapper'>
+            <div className={styles['user__inner-wrapper']}>
               {getInputFields(user).map((input) => (
                 <Input
                   name={input.name}
@@ -47,14 +50,14 @@ export const User = () => {
                   key={input.name}
                 />
               ))}
-              <div className={`user__input`}>
+              <div className={styles.user__input}>
                 <label>
                   Comment
                   <textarea {...methods.register('comment')} readOnly={isReadOnly} />
                 </label>
               </div>
             </div>
-            <button type='submit' disabled={isReadOnly} className='user__submit-btn'>
+            <button type='submit' disabled={isReadOnly} className={styles['user__submit-btn']}>
               Отправить
             </button>
           </form>

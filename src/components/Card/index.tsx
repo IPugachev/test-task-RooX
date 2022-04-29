@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { UserInterface } from '../../interfaces/UserInterface'
-import './styles.scss'
+import { UserInterface } from '../../interfaces/userInterface'
+import styles from './styles.module.scss'
 
 interface CardProps {
   userInfo: UserInterface
@@ -10,28 +10,28 @@ interface CardProps {
 
 export const Card = ({ userInfo }: CardProps) => {
   return (
-    <div className='card'>
-      <div className='card__inner-wrapper'>
-        <div className='card__name'>
+    <div className={styles.card}>
+      <div className={styles['card__inner-wrapper']}>
+        <div className={styles.card__name}>
           <p>
             ФИО:
             <span>{userInfo.name}</span>
           </p>
         </div>
-        <div className='card__city'>
+        <div className={styles.card__city}>
           <p>
             город:
             <span>{userInfo.address.city}</span>
           </p>
         </div>
-        <div className='card__company'>
+        <div className={styles.card__company}>
           <p>
             компания:
             <span>{userInfo.company.name}</span>
           </p>
         </div>
       </div>
-      <Link to={`user/${userInfo.id}`} className='card__details'>
+      <Link to={`user/${userInfo.id}`} className={styles.card__details}>
         Подробнее
       </Link>
     </div>

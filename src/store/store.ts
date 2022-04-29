@@ -1,7 +1,7 @@
 import { configureStore, ThunkAction, Action, combineReducers } from '@reduxjs/toolkit'
 
 import uiSlice from './reducers/ui/uiSlice'
-import { userAPI } from './services/UserService'
+import { userAPI } from './services/userService'
 
 const rootReducer = combineReducers({
   [userAPI.reducerPath]: userAPI.reducer,

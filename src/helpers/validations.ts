@@ -1,4 +1,4 @@
-import { IValidationFields } from '../interfaces/ValidationInterfaces'
+import { IValidationFields } from '../interfaces/validationInterfaces'
 
 export const validationFields: IValidationFields = {
   reqieredFlag: {
