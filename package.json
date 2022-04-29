@@ -2,11 +2,11 @@
   "name": "react-webpack",
   "version": "1.0.0",
   "description": "test task RooX",
-  "homepage": "https://gitname.github.io/test-task-roox",
+  "homepage": "https://ipugachev.github.io/test-task-RooX/",
   "main": "src/index.tsx",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "start": "webpack serve --mode development",
     "build": "webpack --mode production"
   },
