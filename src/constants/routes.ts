@@ -1,4 +1,4 @@
 export const ROUTES = {
-  HOME: '/',
-  USER: 'user/:userId',
+  HOME: 'test-task-RooX/',
+  USER: 'test-task-RooX/user/:userId',
 }
