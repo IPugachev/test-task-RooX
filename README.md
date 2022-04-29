@@ -1,4 +1,5 @@
 # Test task for RooX
+Demo (https://ipugachev.github.io/test-task-RooX/)
 ## Стек технологий:
 - React 18
 - TypeScript
